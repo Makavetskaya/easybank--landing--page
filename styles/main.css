@@ -1,7 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Public+Sans:wght@300;400;700&display=swap");
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-header {
+  background-color: hsl(0deg, 0%, 98%);
+  position: relative;
+  z-index: 4;
+}
+.section-header .header {
+  padding: 25px 0;
+  width: 100%;
+}
+.section-header .header .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-header .header .header-wrapper .header-list {
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+}
+.section-header .header .header-wrapper .header-list a {
+  color: hsl(233deg, 8%, 62%);
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+.section-header .header .header-wrapper .header-list a:hover {
+  color: hsl(233deg, 26%, 24%);
+}
+
+.btn-invite {
+  border: none;
+  background-image: linear-gradient(80deg, rgb(49, 211, 92), rgb(43, 183, 218));
+  padding: 14px 25px;
+  border-radius: 1.8rem;
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+  transition: all 0.3 ease-in;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+.btn-invite:hover {
+  opacity: 0.5;
+}
+
+.main {
+  position: relative;
+  z-index: 3;
+}
+.main .img-main {
+  position: absolute;
+  top: -71%;
+  right: -8%;
+  width: 630px;
+  z-index: 2;
+}
+.main .img-1 {
+  position: absolute;
+  top: -81%;
+  right: -18%;
+  width: 950px;
+  z-index: 1;
+}
+.main .main-wrapper {
+  margin-top: 5.2rem;
+  width: 65%;
+}
+.main .main-wrapper h1 {
+  color: hsl(233deg, 26%, 24%);
+  font-size: 3.2rem;
+}
+.main .main-wrapper .main-description {
+  width: 70%;
+  margin: 1.8rem 0;
+  font-size: 1.1rem;
+  color: hsl(233deg, 8%, 62%);
+  line-height: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

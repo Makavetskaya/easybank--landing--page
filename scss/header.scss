@@ -1,0 +1,28 @@
+.section-header {
+  background-color: $header;
+  position: relative;
+  z-index: 4;
+  .header {
+    padding: 25px 0;
+    width: 100%;
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .header-list {
+        display: flex;
+        width: 450px;
+        justify-content: space-between;
+        a {
+          color: $text;
+          cursor: pointer;
+          transition: all 0.25s ease-in;
+        }
+
+        a:hover {
+          color: $title;
+        }
+      }
+    }
+  }
+}

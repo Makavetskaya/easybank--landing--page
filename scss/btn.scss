@@ -1,0 +1,14 @@
+.btn-invite {
+  border: none;
+  background-image: $gradient;
+  padding: 14px 25px;
+  border-radius: 1.8rem;
+  color: $link;
+  cursor: pointer;
+  transition: all 0.3 ease-in;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+.btn-invite:hover {
+  opacity: 0.5;
+}

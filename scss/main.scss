@@ -1,5 +1,6 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import 'base.scss';
+@import 'color.scss';
+@import 'font.scss';
+@import 'header.scss';
+@import 'btn.scss';
+@import 'firstscreen';

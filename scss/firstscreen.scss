@@ -1,0 +1,34 @@
+.main {
+  position: relative;
+  z-index: 3;
+  .img-main {
+    position: absolute;
+    top: -71%;
+    right: -8%;
+    width: 630px;
+    z-index: 2;
+  }
+  .img-1 {
+    position: absolute;
+    top: -81%;
+    right: -18%;
+    width: 950px;
+    z-index: 1;
+  }
+
+  .main-wrapper {
+    margin-top: 5.2rem;
+    width: 65%;
+    h1 {
+      color: $title;
+      font-size: 3.2rem;
+    }
+    .main-description {
+      width: 70%;
+      margin: 1.8rem 0;
+      font-size: 1.1rem;
+      color: $text;
+      line-height: 1.5rem;
+    }
+  }
+}
