@@ -1,27 +1,44 @@
-.section-header {
+.navbar {
   background-color: $header;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  padding: 25px 0;
   z-index: 4;
-  .header {
-    padding: 25px 0;
-    width: 100%;
-    .header-wrapper {
+  .navbar-wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    .logo img {
+      width: 180px;
+    }
+    .menu {
       display: flex;
+      width: 450px;
       justify-content: space-between;
-      align-items: center;
-      .header-list {
-        display: flex;
-        width: 450px;
-        justify-content: space-between;
-        a {
-          color: $text;
-          cursor: pointer;
-          transition: all 0.25s ease-in;
-        }
+      a {
+        position: relative;
+        color: $text;
+        cursor: pointer;
+        transition: all 0.25s ease-in;
+      }
 
-        a:hover {
-          color: $title;
-        }
+      a:active {
+        color: $title;
+      }
+
+      a::after {
+        position: absolute;
+        bottom: -38px;
+        left: 0;
+        content: '';
+        height: 3px;
+        width: 0;
+        border-bottom: 3px solid rgb(49, 211, 92);
+        transition: all 0.2s ease-in-out;
+      }
+      a:hover::after {
+        width: 104%;
       }
     }
   }

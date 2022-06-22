@@ -1,0 +1,31 @@
+.secondscreen {
+  background-color: $bg-2;
+  .secondscreen-wrapper {
+    padding: 116px 0;
+    .subtitle {
+      .subtitle-title {
+        font-weight: 400;
+        font-size: 2.5rem;
+        color: $title;
+      }
+    }
+    .wrapper-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 -15px;
+      .block-item {
+        margin: 0 15px;
+        margin-top: 1.8rem;
+        margin: 0 15px;
+        width: 300px;
+        .block-title {
+          font-weight: 400;
+          color: $title;
+          font-size: 1.5rem;
+          margin-top: 1.8rem;
+        }
+      }
+    }
+  }
+}
