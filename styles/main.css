@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+body.noscroll {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 15px;
@@ -245,7 +249,7 @@ footer .footer-wrapper .footer-copyright {
   color: hsl(233deg, 8%, 62%);
 }
 
-@media (max-width: 950px) {
+@media (max-width: 767px) {
   .container {
     max-width: 90%;
   }
@@ -319,6 +323,16 @@ footer .footer-wrapper .footer-copyright {
     color: hsl(233deg, 26%, 24%);
   }
 
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
   .main {
     margin: 150px 0 65px 0;
   }
@@ -382,20 +396,49 @@ footer .footer-wrapper .footer-copyright {
   width: 50px;
   border-radius: 50%;
   background-image: linear-gradient(80deg, rgb(49, 211, 92), rgb(43, 183, 218));
-  opacity: 0.5;
   box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.1);
   border: none;
   outline: none;
   cursor: pointer;
 }
-#pageup #pageup:hover {
-  opacity: 1;
-}
 #pageup span {
+  width: 30px;
+  top: 10px;
   color: #fff;
-  display: flex;
-  align-items: center;
-  width: 100%;
+}
+
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+/* fadeInUp */
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+
+/* fadeOutDown */
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
