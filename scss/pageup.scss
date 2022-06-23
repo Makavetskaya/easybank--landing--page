@@ -1,18 +1,24 @@
 #pageup {
-  // display: none;
+  display: none;
   position: fixed;
   bottom: 40px;
   right: 40px;
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: rgb(49, 211, 92);
+  background-image: $gradient;
+  opacity: 0.5;
   box-shadow: 0 5px 10px 2px rgb(0 0 0 / 10%);
   border: none;
   outline: none;
   cursor: pointer;
 
+  #pageup:hover {
+    opacity: 1;
+  }
+
   span {
+    color: #fff;
     display: flex;
     align-items: center;
     width: 100%;

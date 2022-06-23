@@ -3,23 +3,18 @@ const popup = document.querySelector('.popup');
 const menu = document.querySelector('.menu').cloneNode(1);
 const pageUp = document.querySelector('#pageup');
 
-// $(window).scroll(function () {
-//   if ($(this).scrollTop() > 1600) {
-//     $('.pageup').fadeIn();
-//   } else {
-//     $('.pageup').fadeOut();
-//   }
-// });
+//scroll
 
-// window.addEventListener('scroll', sccrollFunction);
+window.addEventListener('scroll', scrollF);
 
-// function sccrollFunction() {
-//   if (window.pageYOffset > 300) {
-//     pageUp.style.display = '.none';
-//   } else {
-//     pageUp.style.display = '.block';
-//   }
-// }
+function scrollF() {
+  if (window.pageYOffset > 300) {
+    pageUp.style.display = 'block';
+  } else {
+    pageUp.style.display = 'none';
+  }
+}
+
 pageUp.addEventListener('click', function () {
   window.scrollTo({
     top: 0,
@@ -28,13 +23,14 @@ pageUp.addEventListener('click', function () {
   });
 });
 
+//humburger
 humb.addEventListener('click', humbHandler);
 
 function humbHandler(event) {
   event.preventDefault();
   popup.classList.toggle('open');
   humb.classList.toggle('active');
-  popupBg.classList.toggle('darken');
+
   renderPopup();
 }
 

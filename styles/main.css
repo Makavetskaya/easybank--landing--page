@@ -374,19 +374,25 @@ footer .footer-wrapper .footer-copyright {
   }
 }
 #pageup {
+  display: none;
   position: fixed;
   bottom: 40px;
   right: 40px;
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: rgb(49, 211, 92);
+  background-image: linear-gradient(80deg, rgb(49, 211, 92), rgb(43, 183, 218));
+  opacity: 0.5;
   box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.1);
   border: none;
   outline: none;
   cursor: pointer;
 }
+#pageup #pageup:hover {
+  opacity: 1;
+}
 #pageup span {
+  color: #fff;
   display: flex;
   align-items: center;
   width: 100%;
