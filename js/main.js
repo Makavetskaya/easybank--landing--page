@@ -4,8 +4,23 @@ const menu = document.querySelector('.menu');
 const body = document.body;
 const pageUp = document.querySelector('#pageup');
 const navLink = document.querySelectorAll('.menu-link[data-goto]');
+
+// const openForm = document.getElementById('open-form');
+const openForm = document.querySelector('.btn-invite');
+const closeForm = document.querySelector('.form-up_close');
+const formUp = document.querySelector('.form-up');
 // .cloneNode(1);
 //scroll
+
+openForm.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  formUp.classList.add('active');
+});
+
+closeForm.addEventListener('click', () => {
+  formUp.classList.remove('active');
+});
 
 window.addEventListener('scroll', scrollF);
 
