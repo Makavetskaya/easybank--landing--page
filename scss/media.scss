@@ -1,12 +1,12 @@
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .container {
-    max-width: 90%;
+    max-width: 80%;
   }
 
   .navbar {
     .navbar-wrapp {
       .logo img {
-        width: 120px;
+        width: 150px;
       }
     }
 
@@ -89,8 +89,7 @@
     }
   }
   .main {
-    margin: 150px 0 65px 0;
-
+    padding: 26% 0 15%;
     .img-1 {
       display: none;
     }
@@ -98,18 +97,21 @@
       display: none;
     }
     .main-wrapper {
-      align-items: center;
-      width: 300px;
+      width: 100%;
       h1 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
       }
       .main-description {
-        width: 280px;
       }
     }
   }
+
+  .subtitle {
+    text-align: center;
+  }
   .subtitle-title {
     text-align: center;
+    width: 100%;
   }
   .wrapper-block {
     text-align: center;

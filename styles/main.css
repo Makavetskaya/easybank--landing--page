@@ -24,7 +24,7 @@ body.noscroll {
 }
 
 p {
-  margin: 1.8rem 0;
+  margin: 2.2rem 0;
   font-size: 1.1rem;
   color: hsl(233deg, 8%, 62%);
   line-height: 1.5rem;
@@ -93,21 +93,23 @@ p {
 }
 
 .main {
-  margin: 280px 0 90px 0;
+  padding: 175px 0 115px;
   position: relative;
   height: 100%;
+  width: 100%;
+  display: flex;
 }
 .main .img-1 {
   position: absolute;
-  width: 600px;
-  top: -70%;
+  width: 750px;
+  top: 25px;
   right: 0;
-  z-index: -1;
+  z-index: 3;
 }
 .main .img-2 {
   position: absolute;
   width: 970px;
-  top: -90%;
+  top: -55px;
   right: -10%;
   z-index: -2;
 }
@@ -125,6 +127,11 @@ p {
 .main .main-wrapper .main-description {
   width: 70%;
 }
+.main .main-wrapper .btn-invite {
+  width: 300px;
+  padding: 18px 30px;
+  font-size: 1.1rem;
+}
 
 .secondscreen {
   background-color: hsl(220deg, 16%, 96%);
@@ -137,10 +144,14 @@ p {
   font-size: 2.5rem;
   color: hsl(233deg, 26%, 24%);
 }
+.secondscreen .secondscreen-wrapper .subtitle .subtitle-description {
+  margin-bottom: 6.5rem;
+}
 .secondscreen .secondscreen-wrapper .wrapper-block {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   margin: 0 -15px;
 }
 .secondscreen .secondscreen-wrapper .wrapper-block .block-item {
@@ -231,7 +242,7 @@ footer .footer-wrapper .footer-list {
 }
 footer .footer-wrapper .footer-list li {
   cursor: pointer;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 footer .footer-wrapper .footer-list li a {
   color: #fff;
@@ -250,13 +261,13 @@ footer .footer-wrapper .footer-copyright {
   color: hsl(233deg, 8%, 62%);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .container {
-    max-width: 90%;
+    max-width: 80%;
   }
 
   .navbar .navbar-wrapp .logo img {
-    width: 120px;
+    width: 150px;
   }
   .navbar .navbar-wrapp .menu a {
     display: none;
@@ -335,7 +346,7 @@ footer .footer-wrapper .footer-copyright {
     }
   }
   .main {
-    margin: 150px 0 65px 0;
+    padding: 26% 0 15%;
   }
   .main .img-1 {
     display: none;
@@ -344,18 +355,18 @@ footer .footer-wrapper .footer-copyright {
     display: none;
   }
   .main .main-wrapper {
-    align-items: center;
-    width: 300px;
+    width: 100%;
   }
   .main .main-wrapper h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
-  .main .main-wrapper .main-description {
-    width: 280px;
+  .subtitle {
+    text-align: center;
   }
 
   .subtitle-title {
     text-align: center;
+    width: 100%;
   }
 
   .wrapper-block {
@@ -449,6 +460,7 @@ footer .footer-wrapper .footer-copyright {
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.8s ease-in-out;
   animation: modal 0.8s ease;
 }
 .form-up .form-up_container {
@@ -500,7 +512,6 @@ footer .footer-wrapper .footer-copyright {
   cursor: pointer;
   color: hsl(233deg, 8%, 62%);
   opacity: 0.5;
-  animation: closemodal 0.8s ease;
 }
 .form-up .form-up_container .form-up_body .form-up_close:hover {
   opacity: 1;
@@ -512,14 +523,6 @@ footer .footer-wrapper .footer-copyright {
   }
   100% {
     opacity: 1;
-  }
-}
-@keyframes closemodal {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 @keyframes formAnimation {
