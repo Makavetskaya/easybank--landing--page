@@ -83,7 +83,7 @@ p {
   border-radius: 1.8rem;
   color: hsl(0deg, 0%, 100%);
   cursor: pointer;
-  transition: all 0.3 ease-in;
+  transition: all 0.8s ease-in;
   font-size: 0.9rem;
   letter-spacing: 2px;
 }
@@ -449,7 +449,7 @@ footer .footer-wrapper .footer-copyright {
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  transition: all 0.8s ease;
+  animation: modal 0.8s ease;
 }
 .form-up .form-up_container {
   display: flex;
@@ -499,8 +499,29 @@ footer .footer-wrapper .footer-copyright {
   right: 20px;
   cursor: pointer;
   color: hsl(233deg, 8%, 62%);
+  opacity: 0.5;
+  animation: closemodal 0.8s ease;
+}
+.form-up .form-up_container .form-up_body .form-up_close:hover {
+  opacity: 1;
 }
 
+@keyframes modal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes closemodal {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes formAnimation {
   from {
     opacity: 0;

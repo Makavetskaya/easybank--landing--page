@@ -5,9 +5,10 @@ const body = document.body;
 const pageUp = document.querySelector('#pageup');
 const navLink = document.querySelectorAll('.menu-link[data-goto]');
 
+//----------- open form-----------//
+
 const closeForm = document.querySelector('.form-up_close');
 const formUp = document.querySelector('.form-up');
-
 const openForm = document.querySelectorAll('.btn-invite');
 
 for (let i = 0; i < openForm.length; i++) {
@@ -19,6 +20,11 @@ for (let i = 0; i < openForm.length; i++) {
 function form() {
   formUp.classList.add('active');
 }
+
+closeForm.addEventListener('click', () => {
+  formUp.classList.remove('active');
+});
+
 // openForm.addEventListener('click', function (event) {
 //   event.preventDefault();
 
@@ -33,9 +39,7 @@ function form() {
 //     formUp.classList.add('active');
 //   };
 
-closeForm.addEventListener('click', () => {
-  formUp.classList.remove('active');
-});
+//----------- pageup -----------//
 
 window.addEventListener('scroll', scrollF);
 
@@ -65,7 +69,8 @@ pageUp.addEventListener('click', function () {
   });
 });
 
-//humburger
+//----------- humburger -----------//
+
 humb.addEventListener('click', humbHandler);
 
 function humbHandler(event) {
@@ -89,7 +94,7 @@ function renderPopup() {
   popup.appendChild(menu);
 }
 
-// прокрутка при клике
+//----------- navigation -----------//
 
 if (navLink.length > 0) {
   navLink.forEach((menuLinks) => {
