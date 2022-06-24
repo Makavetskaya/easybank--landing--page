@@ -47,6 +47,23 @@
       transform: translateY(-5px) rotate(45deg);
     }
   }
+  .form-up.active {
+    .form-up_container {
+      .form-up_body {
+        width: 90%;
+        padding: 60px 15px 75px 15px;
+        form {
+          input {
+            width: 100%;
+          }
+          button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
   .popup {
     z-index: 100;
     position: fixed;
